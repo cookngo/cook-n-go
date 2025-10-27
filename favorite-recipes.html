@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook N Go | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex-between">
+            <div class="logo-container">
+                <img src="Assets/logo.png" alt="Cook N Go Logo" id="logo" width="30%;" style="margin-right: 15px; max-width: 100px;">
+                <h1><a href="index.html" style="color: white;">Cook N Go</a></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="favorite-recipes.html" class="nav-link active">Recipe Catalog</a></li>
+                </ul>
+                <button id="menu-btn" class="menu-btn" onclick="open_mobile_menu()">☰</button>
+            </nav>
+        </div>
+    </header>
+    <div id="mobile-menu">
+        <span id="close-mobile-menu" class="mobile-nav" onclick="close_mobile_menu()">✕</span>
+        <a href="index.html" class="mobile-nav">Home</a>
+        <a onclick="favorites_redirect()" class="mobile-nav">Recipe Catalog</a>
+    </div>
+    <div id="recipe-info-div">
+    <main id="main-content">
+        <br>
+        <section id="top">
+            <h1 class="inline">Recipe Catalog</h1>
+            <p id="favorite-recipes">Favorite Recipes</p>
+        </section>
+        <section id="results">
+            <div id="favorite-results-container">
+            </div>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>Cook N Go - You'll thank us later</p>
+            </div>
+            <div id="footer" class="footer-bottom"></div>
+            <div class="mail">
+                To contact us: <i id="mail-adress">29-004@isriga.lv</i>
+            </div>
+        </div>
+    </footer>
+    <script src="render-script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
