@@ -1,4 +1,4 @@
-const version = "v0.2.0"
+const version = "v0.2.1"
 
 function renderFooter() {
     const footer = document.getElementById('footer');
