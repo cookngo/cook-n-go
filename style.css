@@ -28,7 +28,6 @@ main {
     margin-top: 130px;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -245,7 +244,7 @@ nav a:hover::after, nav a.active::after {
 
 #main-recipe-content {
     max-width: 1000px;
-    margin: 20px auto;       
+    margin: 160px auto 20px auto;       
     display: flex;
     justify-content: center; 
     gap: 20px;
